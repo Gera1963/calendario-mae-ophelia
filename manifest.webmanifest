@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Calendário Mãe Ophelia 2027",
+  "short_name": "Mãe Ophelia",
+  "description": "Atalho para o Calendário Mãe Ophelia 2027",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F6F9",
+  "theme_color": "#7772A8",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

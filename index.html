@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7772A8">
+  <meta name="description" content="Calendário Mãe Ophelia 2027">
+  <title>Calendário Mãe Ophelia 2027</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 24px; background: #F7F6F9; color: #514B80;
+      font-family: Arial, sans-serif; text-align: center;
+    }
+    main { width: min(100%, 420px); }
+    img { width: 132px; height: 132px; border-radius: 26px; }
+    h1 { font-size: 1.45rem; margin: 22px 0 8px; }
+    p { line-height: 1.5; color: #625D72; margin: 0 0 24px; }
+    a {
+      display: inline-block; padding: 15px 25px; border-radius: 12px;
+      background: #7772A8; color: white; text-decoration: none;
+      font-weight: 700;
+    }
+    small { display: block; margin-top: 18px; color: #777; line-height: 1.45; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./icon-192.png" alt="Ícone do Calendário Mãe Ophelia">
+    <h1>Calendário Mãe Ophelia 2027</h1>
+    <p>Seu calendário está pronto para ser aberto.</p>
+    <a href="https://script.google.com/macros/s/AKfycbz54ri6Cv3LCus7wLl0HH0r0D7M7lJy-WYq_JyWTKWGgWuHWkzFMGZZeXRTojvu_6GclA/exec">Abrir calendário</a>
+    <small>Os compromissos continuam sendo salvos no Google Agenda.</small>
+  </main>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
